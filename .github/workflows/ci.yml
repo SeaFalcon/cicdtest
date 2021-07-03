@@ -24,6 +24,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Docker build
-        run |
+      - name: Docker build 
+        run: |
           docker build -t softsquared .
